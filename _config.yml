@@ -1,0 +1,9 @@
+safe: true
+pygments: true
+auto: true
+exclude:
+  - tools
+  - bin
+  - compressed
+
+baseurl: http://shebiki.github.com/bookmarklets

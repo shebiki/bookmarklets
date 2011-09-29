@@ -1,0 +1,21 @@
+---
+layout: site
+title: home
+---
+{% for post in site.posts limit:5 %}
+  <div class="bookmarklet">
+    <div class="ui-widget">
+      <div class="ui-widget-header">
+        <span class="title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        <span class="date">{{ post.date | date_to_long_string }}</span>
+      </div>
+      <div class="ui-widget-content ui-helper-clearfix">
+        <div class="blurb">{{ post.blurb }}</div>
+        <div class="controls">
+          <a href="{{ post.bookmarklet }}">Run</a>
+          <a href="{{ site.baseurl }}{{ post.url }}">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

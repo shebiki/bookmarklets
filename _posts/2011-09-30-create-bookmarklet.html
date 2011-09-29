@@ -1,0 +1,16 @@
+---
+layout: bookmarklet
+title: Escape Bookmarklet
+blurb: Provides bookmarklet escaping ability via a prompt and an alert.
+bookmarklet: javascript:%28function%28%29%7Bvar%20a%3Dprompt%28%22Enter%20compressed%20JavaScript%22%29%3Bif%28a%29%7Ba%3Da.replace%28/%5B%5Ct%5Cr%5Cn%5D/g%2C%22%22%29%3Balert%28%22javascript%3A%22+escape%28a%29%29%7D%7D%28%29%29%3B
+---
+<div class="source">
+  <div class="ui-widget">
+    <div class="ui-widget-header">
+      <span class="title">Source</span>
+    </div>
+    <div class="ui-widget-content">
+      {% highlight javascript linenos %}{% include create-bookmarklet.js %}{% endhighlight %}
+    </div>
+  </div>
+</div>

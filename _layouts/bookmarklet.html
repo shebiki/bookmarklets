@@ -1,0 +1,18 @@
+---
+layout: site
+---
+<div class="bookmarklet">
+  <div class="ui-widget">
+    <div class="ui-widget-header">
+      <span class="title">{{ page.title }}</span>
+      <span class="date">{{ page.date | date_to_long_string }}</span>
+    </div>
+    <div class="ui-widget-content ui-helper-clearfix">
+      <div class="blurb">{{ page.blurb }}</div>
+      <div class="controls">
+        <a href="{{ page.bookmarklet }}">Run</a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ content }}

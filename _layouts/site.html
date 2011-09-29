@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link href="{{ site.baseurl }}/css/redmond/jquery-ui-1.8.16.custom.css" rel="stylesheet" type="text/css" />
+    <link href="{{ site.baseurl }}/css/syntax.css" rel="stylesheet" type="text/css" />
+    <link href="{{ site.baseurl }}/css/site.css" rel="stylesheet" type="text/css" />
+    <script src="{{ site.baseurl }}/js/jquery-1.6.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ site.baseurl }}/js/jquery-ui-1.8.16.custom.min.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="ui-widget ui-widget-header">
+        <h1><a href="{{ site.baseurl }}">JavaScript Bookmarklets</a></h1>
+      </div>
+    </div>
+    <div id="main">{{ content }}</div>
+    <div id="footer">
+      <div class="generated">Generated with <a href="https://github.com/mojombo/jekyll/wiki">Jekyll</a></div>
+      <div class="date ">Last updated {{ site.time | date_to_long_string }}</div>
+    </div>
+    <script type="text/javascript">
+      $(function () {
+        $('.bookmarklet .controls a').button();
+      });
+    </script>
+  </body>
+</html>

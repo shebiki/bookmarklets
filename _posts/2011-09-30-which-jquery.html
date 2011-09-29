@@ -1,0 +1,16 @@
+---
+layout: bookmarklet
+title: Which jQuery?
+blurb: Pops up an alert with the current version of jQuery and jQuery UI on the current page.
+bookmarklet: javascript:%28function%28a%29%7Bvar%20c%3Da.jQuery%3Bvar%20b%3Bif%28c%26%26c.fn%26%26c.fn.jquery%29%7Bb%3D%22jQuery%3A%20%22+c.fn.jquery%3Bif%28c.ui%26%26c.ui.version%29%7Bb+%3D%22%5CnjQuery%20UI%3A%20%22+c.ui.version%7D%7Delse%7Bb%3D%22jQuery%20is%20not%20available%22%7Dalert%28b%29%7D%28window%29%29%3B
+---
+<div class="source">
+  <div class="ui-widget">
+    <div class="ui-widget-header">
+      <span class="title">Source</span>
+    </div>
+    <div class="ui-widget-content">
+      {% highlight javascript linenos %}{% include which-jquery.js %}{% endhighlight %}
+    </div>
+  </div>
+</div>
