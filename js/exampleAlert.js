@@ -1,0 +1,3 @@
+---
+---
+{% include exampleAlert.js %}
