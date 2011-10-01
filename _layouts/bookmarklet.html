@@ -10,7 +10,9 @@ layout: site
     <div class="ui-widget-content ui-helper-clearfix">
       <div class="blurb">{{ page.blurb }}</div>
       <div class="controls">
-        <a href="{{ page.bookmarklet }}">Run</a>
+        {% if page.bookmarklet %}
+          <a href="{{ page.bookmarklet }}">Run</a>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 ---
 layout: site
-title: home
+title: Bookmarklets
 ---
 {% for post in site.posts limit:5 %}
   <div class="bookmarklet">
@@ -12,7 +12,9 @@ title: home
       <div class="ui-widget-content ui-helper-clearfix">
         <div class="blurb">{{ post.blurb }}</div>
         <div class="controls">
-          <a href="{{ post.bookmarklet }}">Run</a>
+          {% if post.bookmarklet %}
+            <a href="{{ post.bookmarklet }}">Run</a>
+          {% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">View</a>
         </div>
       </div>
