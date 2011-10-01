@@ -6,7 +6,7 @@ body {
   margin-bottom: 1em;
 }
 .ui-widget-header {
-  padding: 0.4em 1em;
+  padding: 0.6em 1em;
 }
 .ui-widget-content {
   padding: 1em 1em;
@@ -15,7 +15,8 @@ body {
   font-size: larger;
 }
 #header h1 {
-  padding: 0 1em;
+  font-size: 3em;
+  padding-left: 0.5em;
   white-space: nowrap;
 }
 #header h1 a:link,
